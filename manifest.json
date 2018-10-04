@@ -34,15 +34,14 @@
                 "name": "is_public",
                 "type": "boolean",
                 "ask": {
-                    "en": "Is it a public application?",
+                    "en": "Is it a public application?"
                 },
                 "default": true
             },
             {
                 "name": "language",
                 "ask": {
-                    "en": "Choose the application language",
-                    "fr": "Choisissez la langue de l'application"
+                    "en": "Choose the application language"
                 },
                 "choices": ["en_US", "de_DE" , "pt_BR" , "ja_JP" , "ko_KR" , "pl_PL" , "gl_ES" ],
                 "default": "en_US"
