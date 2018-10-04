@@ -140,7 +140,7 @@ ynh_add_fpm_config
 
 ### `ynh_replace_string` is used to replace a string in a file.
 ### (It's compatible with sed regular expressions syntax)
-udo cp $final_path/config/config.ini.sample  $final_path/config/config.ini 
+cp $final_path/config/config.ini.sample  $final_path/config/config.ini 
 ynh_replace_string "Your application name" "Yunohost Halcyon" "$final_path/config/config.ini"
 ynh_replace_string "example.com"           "$domain"          "$final_path/config/config.ini"
 ynh_replace_string "en_US"                 "$language"        "$final_path/config/config.ini"
