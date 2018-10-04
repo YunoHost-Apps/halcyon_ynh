@@ -47,7 +47,7 @@
                 "choices": ["en_US", "de_DE" , "pt_BR" , "ja_JP" , "ko_KR" , "pl_PL" , "gl_ES" ],
                 "default": "en_US"
             }
-            }
+            
         ]
     }
 }
