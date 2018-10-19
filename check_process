@@ -6,8 +6,8 @@
 ;; Test complet
 	; Manifest
 		domain="domain.tld"	(DOMAIN)
-		language="en_US"
 		is_public=1	(PUBLIC|public=1|private=0)
+		language="en_US"
 	; Checks
 		pkg_linter=1
 		setup_sub_dir=1

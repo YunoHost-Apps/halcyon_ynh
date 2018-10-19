@@ -5,15 +5,15 @@
     "description": {
         "en": "A webclient for Mastodon and Pleroma which looks like Twitter."
     },
-    "version": "2.1.1",
+    "version": "2.1.2",
     "url": "https://notabug.org/halcyon-suite/halcyon",
-    "license": "free",
+    "license": "AGPL3",
     "maintainer": {
         "name": "Anmol Sharma",
         "email": "anmol@datamol.org"
     },
     "requirements": {
-        "yunohost": ">= 3.0.0"
+        "yunohost": ">= 2.7"
     },
     "multi_instance": true,
     "services": [
