@@ -2,7 +2,7 @@
 
 
 [![Install Halcyon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=halcyon)<br><br>
-Version: **2.1.2**
+Version: **2.1.3**
 <br>
 ### Interesting links
 
