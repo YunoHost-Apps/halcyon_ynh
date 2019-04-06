@@ -11,3 +11,10 @@ ynh_delete_file_checksum () {
 	local checksum_setting_name=checksum_${1//[\/ ]/_}	# Replace all '/' and ' ' by '_'
 	ynh_app_setting_delete $app $checksum_setting_name
 }
+
+#=================================================
+# COMMON VARIABLES
+#=================================================
+
+# dependencies used by the app
+pkg_dependencies="php-intl php-mbstring php-curl"

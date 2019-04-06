@@ -5,7 +5,7 @@
     "description": {
         "en": "A webclient for Mastodon and Pleroma which looks like Twitter."
     },
-    "version": "2.1.6",
+    "version": "2.2.5~ynh1",
     "url": "https://notabug.org/halcyon-suite/halcyon",
     "license": "AGPL-3.0-only",
     "maintainer": {
@@ -13,12 +13,12 @@
         "email": "anmol@datamol.org"
     },
     "requirements": {
-        "yunohost": ">= 2.7"
+        "yunohost": ">= 3.0"
     },
     "multi_instance": true,
     "services": [
         "nginx",
-        "php5-fpm"
+        "php7.0-fpm"
     ],
     "arguments": {
         "install" : [
@@ -43,7 +43,7 @@
                 "ask": {
                     "en": "Choose the application language"
                 },
-                "choices": ["en_US", "de_DE" , "pt_BR" , "ja_JP" , "ko_KR" , "pl_PL" , "gl_ES" ],
+                "choices": ["en_US", "de_DE" , "pt_BR" , "ja_JP" , "ko_KR" , "pl_PL" , "gl_ES" , "fr_FR", "cs_CZ" , "it_IT" ],
                 "default": "en_US"
             }
             
