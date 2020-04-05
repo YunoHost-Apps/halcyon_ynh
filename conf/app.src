@@ -1,5 +1,5 @@
-SOURCE_URL=https://notabug.org/halcyon-suite/halcyon/archive/2.4.5.tar.gz
-SOURCE_SUM=67e152ba3fe8a55b15d28b6ae69cc00124d335ba11318bad095093316a5f682b
+SOURCE_URL=https://notabug.org/halcyon-suite/halcyon/archive/2.4.8.tar.gz
+SOURCE_SUM=22083d13bb4a349cac888a09bd7f046e9984281d78e793e1342aafe397e38ec6
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true

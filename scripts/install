@@ -45,7 +45,7 @@ app=$YNH_APP_INSTANCE_NAME
 #=================================================
 # CHECK IF THE APP CAN BE INSTALLED WITH THESE ARGS
 #=================================================
-## About --weight and --time
+### About --weight and --time
 ### ynh_script_progression will show to your final users the progression of each scripts.
 ### In order to do that, --weight will represent the relative time of execution compared to the other steps in the script.
 ### --time is a packager option, it will show you the execution time since the previous call.

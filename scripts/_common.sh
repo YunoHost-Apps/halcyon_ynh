@@ -5,4 +5,4 @@
 #=================================================
 
 # dependencies used by the app
-pkg_dependencies="php-intl php-mbstring php-curl"
+pkg_dependencies="php-intl php-mbstring php-curl php-json php-gettext"
