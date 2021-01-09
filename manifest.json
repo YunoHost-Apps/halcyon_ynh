@@ -3,8 +3,8 @@
     "id": "halcyon",
     "packaging_format": 1,
     "description": {
-        "en": "Webclient for Mastodon and Pleroma which looks like Twitter.",
-        "fr": "Client web pour Mastodon et Pleroma ressemblent à Twitter."
+        "en": "Webclient for Mastodon and Pleroma.",
+        "fr": "Client web pour Mastodon et Pleroma."
     },
     "version": "2.4.9~ynh1",
     "url": "https://notabug.org/halcyon-suite/halcyon",
@@ -38,6 +38,10 @@
                 "ask": {
                     "en": "Is it a public application?",
                     "fr": "Est-ce une application publique ?"
+                },
+                "help": {
+                    "en": "If enabled, Halcyon will be accessible by people who do not have an account. This can be changed later via the webadmin.",
+                    "fr": "Si cette case est cochée, Halcyon sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
                 },
                 "default": true
             },
