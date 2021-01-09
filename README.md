@@ -1,7 +1,7 @@
 # Halcyon for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/halcyon.svg)](https://dash.yunohost.org/appci/app/halcyon) ![](https://ci-apps.yunohost.org/ci/badges/halcyon.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/halcyon.maintain.svg)  
-[![Install Halcyon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=halcyon)
+[![Install Halcyon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=halcyon)
 
 > *This package allows you to install Halcyon quickly and simply on a YunoHost server.  
 If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/install) to learn how to install it.*
@@ -9,7 +9,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 ## Overview
 Halcyon is a webclient for Mastodon and Pleroma which looks like Twitter.
 
-**Shipped version:** 2.4.8
+**Shipped version:** 2.4.9
 
 ## Screenshots
 
