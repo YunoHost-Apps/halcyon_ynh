@@ -19,7 +19,7 @@ Halcyon is a webclient for Mastodon and Pleroma which looks like Twitter.
 
 ## Limitations
 
-* Halcyon requires a dedicated domain like halcyon.domain.tld
+* Halcyon requires a dedicated domain like `halcyon.domain.tld`.
 
 #### Supported architectures
 
