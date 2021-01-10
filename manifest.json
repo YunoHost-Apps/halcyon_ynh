@@ -3,9 +3,10 @@
     "id": "halcyon",
     "packaging_format": 1,
     "description": {
-        "en": "A webclient for Mastodon and Pleroma which looks like Twitter."
+        "en": "Webclient for Mastodon and Pleroma.",
+        "fr": "Client web pour Mastodon et Pleroma."
     },
-    "version": "2.4.8~ynh1",
+    "version": "2.4.9~ynh1",
     "url": "https://notabug.org/halcyon-suite/halcyon",
     "license": "AGPL-3.0-only",
     "maintainer": {
@@ -13,12 +14,12 @@
         "email": "anmol@datamol.org"
     },
     "requirements": {
-        "yunohost": ">= 3.0"
+        "yunohost": ">= 3.8.1"
     },
     "multi_instance": true,
     "services": [
         "nginx",
-        "php7.0-fpm"
+        "php7.3-fpm"
     ],
     "arguments": {
         "install" : [
@@ -26,7 +27,8 @@
                 "name": "domain",
                 "type": "domain",
                 "ask": {
-                    "en": "Choose a domain name for Halcyon"
+                    "en": "Choose a domain name for Halcyon",
+                    "fr": "Choisissez un nom de domaine pour Halcyon"
                 },
                 "example": "example.com"
             },
@@ -34,19 +36,25 @@
                 "name": "is_public",
                 "type": "boolean",
                 "ask": {
-                    "en": "Is it a public application?"
+                    "en": "Is it a public application?",
+                    "fr": "Est-ce une application publique ?"
+                },
+                "help": {
+                    "en": "If enabled, Halcyon will be accessible by people who do not have an account. This can be changed later via the webadmin.",
+                    "fr": "Si cette case est cochée, Halcyon sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
                 },
                 "default": true
             },
             {
                 "name": "language",
+                "type": "string",
                 "ask": {
-                    "en": "Choose the application language"
+                    "en": "Choose the application language",
+                    "fr": "Choisissez la langue de l'application"
                 },
-                "choices": ["en_US", "de_DE" , "pt_BR" , "ja_JP" , "ko_KR" , "pl_PL" , "gl_ES" , "fr_FR", "cs_CZ" , "it_IT" ],
+                "choices": ["en_US", "de_DE", "pt_BR", "ja_JP", "ko_KR", "pl_PL", "gl_ES", "fr_FR", "cs_CZ", "it_IT"],
                 "default": "en_US"
-            }
-            
+            }  
         ]
     }
 }
