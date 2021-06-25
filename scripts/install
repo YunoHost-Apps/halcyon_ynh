@@ -49,6 +49,14 @@ ynh_app_setting_set --app=$app --key=is_public --value=$is_public
 ynh_app_setting_set --app=$app --key=language --value=$language
 
 #=================================================
+# CREATE DEDICATED USER
+#=================================================
+ynh_script_progression --message="Configuring system user..." --weight=2
+
+# Create a system user
+ynh_system_user_create --username=$app --home_dir="$final_path"
+
+#=================================================
 # STANDARD MODIFICATIONS
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -70,14 +78,6 @@ ynh_script_progression --message="Configuring NGINX web server..." --weight=2
 
 # Create a dedicated nginx config
 ynh_add_nginx_config
-
-#=================================================
-# CREATE DEDICATED USER
-#=================================================
-ynh_script_progression --message="Configuring system user..." --weight=2
-
-# Create a system user
-ynh_system_user_create --username=$app
 
 #=================================================
 # PHP-FPM CONFIGURATION
@@ -102,7 +102,7 @@ chown $app:$app "$final_path/config/config.ini"
 #=================================================
 # SETUP SSOWAT
 #=================================================
-ynh_script_progression --message="Configuring SSOwat..." --weight=10
+ynh_script_progression --message="Configuring permissions..." --weight=10
 
 # Make app public if necessary or protect it
 if [ $is_public -eq 1 ]
