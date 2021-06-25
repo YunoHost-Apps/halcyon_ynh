@@ -59,6 +59,10 @@ ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$final_path"
 
+chmod 750 "$final_path"
+chmod -R o-rwx "$final_path"
+chown -R $app:www-data "$final_path"
+
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
@@ -90,29 +94,10 @@ phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
 # MODIFY A CONFIG FILE
 #=================================================
 
-### `ynh_replace_string` is used to replace a string in a file.
-### (It's compatible with sed regular expressions syntax)
-cp $final_path/config/config.ini.sample  $final_path/config/config.ini 
-ynh_replace_string --match_string="Your application name" --replace_string="Yunohost Halcyon" --target_file="$final_path/config/config.ini"
-ynh_replace_string --match_string="example.com"           --replace_string="$domain"          --target_file="$final_path/config/config.ini"
-ynh_replace_string --match_string="en_US"                 --replace_string="$language"        --target_file="$final_path/config/config.ini"
+ynh_add_config --template="../conf/config.ini.sample" --destination="$final_path/config/config.ini"
 
-#=================================================
-# STORE THE CONFIG FILE CHECKSUM
-#=================================================
-
-# Calculate and store the config file checksum into the app settings
-ynh_store_file_checksum --file="$final_path/config/config.ini"
-
-#=================================================
-# GENERIC FINALIZATION
-#=================================================
-# SECURE FILES AND DIRECTORIES
-#=================================================
-
-# Set permissions to app files
-chown -R $app: $final_path
-chmod -R 755 $final_path/data
+chmod 400 "$final_path/config/config.ini"
+chown $app:$app "$final_path/config/config.ini"
 
 #=================================================
 # SETUP SSOWAT
@@ -122,7 +107,7 @@ ynh_script_progression --message="Configuring SSOwat..." --weight=10
 # Make app public if necessary or protect it
 if [ $is_public -eq 1 ]
 then
-	ynh_permission_update --permission "main" --add "visitors"
+	ynh_permission_update --permission="main" --add="visitors"
 fi
 
 #=================================================

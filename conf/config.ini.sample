@@ -1,0 +1,33 @@
+; Register App Settings
+; The URL Unshortener automatically parses links to URL Shorteners like bit.ly and displays the long version so that the user knows where a link goes
+[App]
+api_client_name = YunoHost Halcyon
+api_client_website = https://__DOMAIN__/
+who_to_follow_provider = https://vinayaka.tsia.de/cgi-bin/vinayaka-user-match-osa-api.cgi?{{host}}+{{user}}
+default_language = __LANGUAGE__
+debug_mode = false
+url_unshortener = true
+
+; Media embed settings
+; YouPlay resolves YouTube MP4s on your server and sends this link to the user for privacy-friendly watching
+; Vimeo embeds work in the same way as YouPlay embeds here because the official players contain too much spyware
+; YouPlay Fallback uses a proprietary API of https://unblockvideos.com and can be used if your own server IP has been blocked by Google
+; Invidous is a external service to watch YouTube videos in a privacy-friendly way - Halcyon can automatically rewrite links to a instance you can set here
+; Nitter is a external service to view Twitter contents in a privacy-friendly way - Halcyon can automatically rewrite links to a instance you can set here
+; Bibliogram is a external service to view Instagram contents in a privacy-friendly way - Halcyon can automatically rewrite links to a instance you can set here
+[Media]
+youplay = true
+vimeo = true
+youplay_fallback = true
+invidious = invidious.snopyta.org
+nitter = nitter.13ad.de
+bibliogram = bibliogram.ggc-project.de
+
+; The proxy can be used optionally to resolve data for privacy-friendly media embeds on the server side - It is not used for Mastodon API requests on login
+; Proxy type can be set to none, socks5, socks4, http or https
+[Proxy]
+type = none
+domain =
+port =
+username = 
+password = 
