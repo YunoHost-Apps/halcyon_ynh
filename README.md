@@ -20,7 +20,6 @@ Webclient for Mastodon and Pleroma.
 **Shipped version:** 2.4.9~ynh1
 
 
-
 ## Screenshots
 
 ![](./doc/screenshots/preview0.png)
