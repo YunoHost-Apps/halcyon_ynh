@@ -1,6 +1,7 @@
 ;; Test complet
 	; Manifest
 		domain="domain.tld"
+		path="/path"
 		is_public=1
 		language="en_US"
 	; Checks

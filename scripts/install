@@ -45,7 +45,6 @@ ynh_script_progression --message="Storing installation settings..." --weight=1
 
 ynh_app_setting_set --app=$app --key=domain --value=$domain
 ynh_app_setting_set --app=$app --key=path --value=$path_url
-ynh_app_setting_set --app=$app --key=is_public --value=$is_public
 ynh_app_setting_set --app=$app --key=language --value=$language
 
 #=================================================
@@ -97,7 +96,7 @@ phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
 ynh_add_config --template="../conf/config.ini.sample" --destination="$final_path/config/config.ini"
 
 chmod 400 "$final_path/config/config.ini"
-chown $app:$app "$final_path/config/config.ini"
+chown $app "$final_path/config/config.ini"
 
 #=================================================
 # SETUP SSOWAT

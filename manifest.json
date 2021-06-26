@@ -8,6 +8,11 @@
     },
     "version": "2.4.9~ynh1",
     "url": "https://notabug.org/halcyon-suite/halcyon",
+    "upstream": {
+        "license": "AGPL-3.0-only",
+        "website": "https://notabug.org/halcyon-suite/halcyon",
+        "code": "https://notabug.org/halcyon-suite/halcyon"
+    },
     "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Anmol Sharma",

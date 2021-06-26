@@ -84,9 +84,9 @@ fi
 ### (It's compatible with sed regular expressions syntax)
 ynh_replace_string "$old_domain"  "$new_domain"  "$final_path/config/config.ini"
 
-# Set permissions to app files
-chown -R $app: $final_path
-chmod -R 755   $final_path/data
+# # Set permissions to app files
+# chown -R $app $final_path
+# chmod -R 755   $final_path/data
 
 ### Verify the checksum of a file, stored by `ynh_store_file_checksum` in the install script.
 ### And create a backup of this file if the checksum is different. So the file will be backed up if the admin had modified it.
