@@ -48,6 +48,15 @@ ynh_app_setting_set --app=$app --key=path --value=$path_url
 ynh_app_setting_set --app=$app --key=language --value=$language
 
 #=================================================
+# STANDARD MODIFICATIONS
+#=================================================
+# INSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression --message="Installing dependencies..."
+
+ynh_install_app_dependencies $pkg_dependencies
+
+#=================================================
 # CREATE DEDICATED USER
 #=================================================
 ynh_script_progression --message="Configuring system user..." --weight=2
@@ -55,8 +64,6 @@ ynh_script_progression --message="Configuring system user..." --weight=2
 # Create a system user
 ynh_system_user_create --username=$app --home_dir="$final_path"
 
-#=================================================
-# STANDARD MODIFICATIONS
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
@@ -75,7 +82,7 @@ chown -R $app:www-data "$final_path"
 #=================================================
 ynh_script_progression --message="Configuring NGINX web server..." --weight=2
 
-# Create a dedicated nginx config
+# Create a dedicated NGINX config
 ynh_add_nginx_config
 
 #=================================================
@@ -83,29 +90,34 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Configuring PHP-FPM..." --weight=1
 
-# Create a dedicated php-fpm config
-ynh_add_fpm_config --package="$extra_php_dependencies"
+# Create a dedicated NGINX config
+ynh_add_nginx_config
 phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
 
 #=================================================
 # SPECIFIC SETUP
 #=================================================
-# MODIFY A CONFIG FILE
+# ADD A CONFIGURATION
 #=================================================
+ynh_script_progression --message="Adding a configuration file..."
 
 ynh_add_config --template="../conf/config.ini.sample" --destination="$final_path/config/config.ini"
 
 chmod 400 "$final_path/config/config.ini"
-chown $app "$final_path/config/config.ini"
+chown $app:$app "$final_path/config/config.ini"
 
+#=================================================
+# GENERIC FINALIZATION
 #=================================================
 # SETUP SSOWAT
 #=================================================
 ynh_script_progression --message="Configuring permissions..." --weight=10
 
-# Make app public if necessary or protect it
+# Make app public if necessary
 if [ $is_public -eq 1 ]
 then
+	# Everyone can access the app.
+	# The "main" permission is automatically created before the install script.
 	ynh_permission_update --permission="main" --add="visitors"
 fi
 

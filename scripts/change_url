@@ -71,7 +71,7 @@ ynh_script_progression --message="Updating NGINX web server configuration..." --
 
 nginx_conf_path=/etc/nginx/conf.d/$old_domain.d/$app.conf
 
-# Change the path in the NGINX  config file
+# Change the path in the NGINX config file
 if [ $change_path -eq 1 ]
 then
 	# Make a backup of the original NGINX config file if modified
@@ -96,16 +96,13 @@ fi
 #=================================================
 # SPECIFIC MODIFICATIONS
 #=================================================
+# UPDATE A CONFIG FILE
+#=================================================
+ynh_script_progression --message="Updating a configuration file..."
 
-### `ynh_replace_string` is used to replace a string in a file.
-### (It's compatible with sed regular expressions syntax)
-ynh_replace_string "$old_domain"  "$new_domain"  "$final_path/config/config.ini"
-
-### Verify the checksum of a file, stored by `ynh_store_file_checksum` in the install script.
-### And create a backup of this file if the checksum is different. So the file will be backed up if the admin had modified it.
-ynh_backup_if_checksum_is_different "$final_path/config/config.ini"
-# Recalculate and store the checksum of the file for the next upgrade.
-ynh_store_file_checksum "$final_path/config/config.ini"
+ynh_backup_if_checksum_is_different --file="$final_path/config/config.ini"
+ynh_replace_string --match_string="$old_domain" --replace_string="$new_domain" --target_file="$final_path/config/config.ini"
+ynh_store_file_checksum --file="$final_path/config/config.ini"
 
 #=================================================
 # GENERIC FINALISATION
