@@ -6,7 +6,7 @@
         "en": "Webclient for Mastodon and Pleroma.",
         "fr": "Client web pour Mastodon et Pleroma."
     },
-    "version": "2.4.9~ynh1",
+    "version": "2.4.9~ynh2",
     "url": "https://notabug.org/halcyon-suite/halcyon",
     "upstream": {
         "license": "AGPL-3.0-only",
@@ -19,7 +19,7 @@
         "email": "anmol@datamol.org"
     },
     "requirements": {
-        "yunohost": ">= 4.2.4"
+        "yunohost": ">= 4.3.0"
     },
     "multi_instance": true,
     "services": [
@@ -27,19 +27,14 @@
         "php7.3-fpm"
     ],
     "arguments": {
-        "install" : [
+        "install": [
             {
                 "name": "domain",
-                "type": "domain",
-                "example": "example.com"
+                "type": "domain"
             },
             {
                 "name": "is_public",
                 "type": "boolean",
-                "help": {
-                    "en": "If enabled, Halcyon will be accessible by people who do not have an account. This can be changed later via the webadmin.",
-                    "fr": "Si cette case est cochée, Halcyon sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
-                },
                 "default": true
             },
             {
@@ -51,7 +46,7 @@
                 },
                 "choices": ["en_US", "de_DE", "pt_BR", "ja_JP", "ko_KR", "pl_PL", "gl_ES", "fr_FR", "cs_CZ", "it_IT"],
                 "default": "en_US"
-            }  
+            }
         ]
     }
 }
