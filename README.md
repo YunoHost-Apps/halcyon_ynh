@@ -19,6 +19,7 @@ Webclient for Mastodon and Pleroma.
 
 **Shipped version:** 2.4.9~ynh2
 
+
 ## Screenshots
 
 ![Screenshot of Halcyon](./doc/screenshots/preview0.png)
