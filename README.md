@@ -15,10 +15,10 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Webclient for Mastodon and Pleroma.
+Halcyon is a webclient for Mastodon and Pleroma which looks like Twitter.
 
-**Shipped version:** 2.4.9~ynh2
 
+**Shipped version:** 2.4.9~ynh3
 
 ## Screenshots
 

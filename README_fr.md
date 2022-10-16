@@ -17,8 +17,8 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Client web pour Mastodon et Pleroma.
 
-**Version incluse :** 2.4.9~ynh2
 
+**Version incluse :** 2.4.9~ynh3
 
 ## Captures d'écran
 
