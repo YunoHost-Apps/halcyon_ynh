@@ -6,7 +6,7 @@
         "en": "Webclient for Mastodon and Pleroma.",
         "fr": "Client web pour Mastodon et Pleroma."
     },
-    "version": "2.4.9~ynh2",
+    "version": "2.4.9~ynh3",
     "url": "https://notabug.org/halcyon-suite/halcyon",
     "upstream": {
         "license": "AGPL-3.0-only",
@@ -15,16 +15,16 @@
     },
     "license": "AGPL-3.0-only",
     "maintainer": {
-        "name": "Anmol Sharma",
-        "email": "anmol@datamol.org"
+        "name": "",
+        "email": ""
     },
     "requirements": {
-        "yunohost": ">= 4.3.0"
+        "yunohost": ">= 11.0.9"
     },
     "multi_instance": true,
     "services": [
         "nginx",
-        "php7.3-fpm"
+        "php7.4-fpm"
     ],
     "arguments": {
         "install": [
