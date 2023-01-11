@@ -3,8 +3,8 @@
     "id": "halcyon",
     "packaging_format": 1,
     "description": {
-        "en": "Webclient for Mastodon and Pleroma.",
-        "fr": "Client web pour Mastodon et Pleroma."
+        "en": "Webclient for Mastodon and Pleroma",
+        "fr": "Client web pour Mastodon et Pleroma"
     },
     "version": "2.4.9~ynh3",
     "url": "https://notabug.org/halcyon-suite/halcyon",
