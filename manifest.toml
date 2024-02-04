@@ -7,7 +7,7 @@ name = "Halcyon"
 description.en = "Webclient for Mastodon and Pleroma"
 description.fr = "Client web pour Mastodon et Pleroma"
 
-version = "2.4.9~ynh3"
+version = "2.4.9~ynh4"
 
 maintainers = []
 
