@@ -47,8 +47,6 @@ ram.runtime = "50M"
     url = "https://notabug.org/halcyon-suite/halcyon/archive/2.4.9.tar.gz"
     sha256 = "5fa0b6f9bb850b4d94f4d210887559fccf9f230baa898f03f7f167c29f3c8c1e"
 
-    autoupdate.strategy = "latest_github_tag"
-
     [resources.system_user]
 
     [resources.install_dir]
