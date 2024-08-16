@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Halcyon
 
-[![集成程度](https://dash.yunohost.org/integration/halcyon.svg)](https://dash.yunohost.org/appci/app/halcyon) ![工作状态](https://ci-apps.yunohost.org/ci/badges/halcyon.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/halcyon.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/halcyon.svg)](https://ci-apps.yunohost.org/ci/apps/halcyon/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/halcyon.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/halcyon.maintain.svg)
 
 [![使用 YunoHost 安装 Halcyon](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=halcyon)
 
@@ -23,7 +23,7 @@ Halcyon is a webclient for Mastodon and Pleroma which looks like Twitter.
 
 ## 截图
 
-![Halcyon 的截图](./doc/screenshots/preview0.png)
+![Halcyon 的截图](./doc/screenshots/halcyon-screenshot.png)
 
 ## 文档与资源
 

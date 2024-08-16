@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Halcyon pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/halcyon.svg)](https://dash.yunohost.org/appci/app/halcyon) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/halcyon.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/halcyon.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/halcyon.svg)](https://ci-apps.yunohost.org/ci/apps/halcyon/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/halcyon.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/halcyon.maintain.svg)
 
 [![Installer Halcyon avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=halcyon)
 
@@ -23,7 +23,7 @@ Client web pour Mastodon et Pleroma.
 
 ## Captures d’écran
 
-![Capture d’écran de Halcyon](./doc/screenshots/preview0.png)
+![Capture d’écran de Halcyon](./doc/screenshots/halcyon-screenshot.png)
 
 ## Documentations et ressources
 

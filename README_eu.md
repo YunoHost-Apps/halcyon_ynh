@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Halcyon YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/halcyon.svg)](https://dash.yunohost.org/appci/app/halcyon) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/halcyon.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/halcyon.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/halcyon.svg)](https://ci-apps.yunohost.org/ci/apps/halcyon/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/halcyon.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/halcyon.maintain.svg)
 
 [![Instalatu Halcyon YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=halcyon)
 
@@ -23,7 +23,7 @@ Halcyon is a webclient for Mastodon and Pleroma which looks like Twitter.
 
 ## Pantaila-argazkiak
 
-![Halcyon(r)en pantaila-argazkia](./doc/screenshots/preview0.png)
+![Halcyon(r)en pantaila-argazkia](./doc/screenshots/halcyon-screenshot.png)
 
 ## Dokumentazioa eta baliabideak
 
